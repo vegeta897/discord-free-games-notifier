@@ -19,7 +19,7 @@
     "url": "git+https://github.com/moonstar-x/discord-free-games-notifier.git"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.6.0"
   },
   "author": "moonstar-x",
   "license": "MIT",
@@ -28,12 +28,12 @@
   },
   "homepage": "https://github.com/moonstar-x/discord-free-games-notifier#readme",
   "dependencies": {
-    "@greencoast/discord.js-extended": "^1.2.0",
+    "@greencoast/discord.js-extended": "^2.2.3",
     "@greencoast/logger": "^1.1.0",
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.10",
     "cron": "^1.8.2",
-    "discord.js": "^12.5.3",
+    "discord.js": "^13.9.1",
     "level": "^7.0.0"
   },
   "devDependencies": {

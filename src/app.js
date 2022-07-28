@@ -1,4 +1,5 @@
 const path = require('path');
+const { Intents } = require('discord.js');
 const { ExtendedClient, ConfigProvider } = require('@greencoast/discord.js-extended');
 const LevelDataProvider = require('@greencoast/discord.js-extended/dist/providers/LevelDataProvider').default;
 const OffersNotifier = require('./classes/OffersNotifier');
@@ -36,7 +37,8 @@ const client = new ExtendedClient({
       `{num_members} users!`,
       `up for {uptime}.`
     ]
-  }
+  },
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_MESSAGES]
 });
 
 const provider = new LevelDataProvider(client, path.join(__dirname, '../data'));
